@@ -1,10 +1,10 @@
-import myPic from './assets/images/Transparent BG.png';
+// import myPic from './assets/images/Transparent BG.png';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function Home() {
   return (
     <>
-      <div className="d-flex justify-content-between custom-navbar-bg p-3">
+      <div className="d-flex justify-content-between custom-navbar-bg p-3 headline">
         <div className="p-5">
           <h5 className="welcome-bg text-center p-2">Welcome! I&apos;m</h5>
           <h2 className="fs-1">Festus</h2>
@@ -17,16 +17,14 @@ function Home() {
             {' '}
           </p>
         </div>
-        <div className="p-1 pic_container">
-          {/* <h2>jsdsc</h2> */}
+        {/* <div className="p-1 pic_container">
           <img
             src={myPic}
             alt="my_pic"
             width="90%"
-            height="100%"
+            height="auto"
           />
-          {/* <h3>hhehe</h3> */}
-        </div>
+        </div> */}
         <div className="d-flex flex-column justify-content-between ">
           <div className="sm-title-wrapper">
             <h4 className="fs-6 sm-title">FOLLOW ME ON: </h4>
