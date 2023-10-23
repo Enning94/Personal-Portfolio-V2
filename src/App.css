@@ -4,10 +4,6 @@
   padding: 0;
 }
 
-body {
-  background-color: rgb(20, 1, 45);
-}
-
 .custom-navbar-bg {
   background-color: rgb(20, 1, 45);
   color: aliceblue;
@@ -15,4 +11,48 @@ body {
 
 .download-bg {
   background-color: red;
+}
+
+.welcome-bg {
+  background-color: rgba(203, 13, 13, 0.273);
+  width: 30%;
+}
+
+.pic_container {
+  width: 100%;
+
+  /* height: 100vh; */
+}
+
+.icon-style {
+  color: white;
+}
+
+.social-media {
+  list-style: none;
+}
+
+.sm-icon {
+  /* padding: 0.5rem; */
+}
+
+/* .sm-title-wrapper{
+  /* rotate: 90; */
+
+/* width: 100%; */
+
+/* flex-grow: 2; */
+
+/* color:red; */
+
+/* } */
+.sm-title {
+  rotate: 90deg;
+
+  /* white-space: nowrap; */
+
+  /* width: 100%; */
+
+  /* flex-grow: 2; */
+  color: red;
 }
