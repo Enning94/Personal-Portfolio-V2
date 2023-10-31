@@ -11,9 +11,11 @@
   }
 
   /* .headline-vh { */
-    /* padding-top: 1.5rem; */
-    /* background-color: rgb(20, 1, 45); */
-   
+
+  /* padding-top: 1.5rem; */
+
+  /* background-color: rgb(20, 1, 45); */
+
   /* } */
 
   .headline {
@@ -21,6 +23,7 @@
     background-repeat: no-repeat;
     background-position: bottom 50px right 10px;
     background-size: 40%;
+
     /* height: 100vh; */
     padding-top: 3rem;
   }
@@ -28,7 +31,7 @@
   .ms-style {
     flex-direction: column;
     justify-content: start;
-    padding:1rem 1rem 10rem 1rem;
+    padding: 1rem 1rem 10rem 1rem;
   }
 
   .line {
@@ -102,7 +105,6 @@
     white-space: nowrap;
     padding-left: 0.5rem;
     background-color: rgba(203, 13, 13, 0.273);
-    
   }
 }
 
@@ -112,6 +114,7 @@
     background-repeat: no-repeat;
     background-position: top 50px right 0.01px;
     background-size: 30%;
+
     /* height: 100vh; */
   }
 
@@ -168,9 +171,11 @@
     rotate: 90deg;
     margin: 2rem  1rem 0 1rem;
   }
-.ms-style{
-  padding: 2rem 0 0 5rem;
-}
+
+  .ms-style {
+    padding: 2rem 0 0 5rem;
+  }
+
   .sm-title {
     padding: 2.5rem 0 0 0;
     white-space: nowrap;
@@ -187,11 +192,12 @@
   .download-bg {
     background-color: red;
   }
+
   .headline-vh {
     padding: 0 5rem 0 5rem;
     background-color: rgb(20, 1, 45);
-   
   }
+
   .welcome-bg {
     background-color: rgba(203, 13, 13, 0.273);
     max-width: 15%;
@@ -223,6 +229,7 @@
 
   .headline-text {
     flex-grow: 2;
+
     /* padding: 5rem 0 0 0; */
     height: 128px;
     font-family: "Poppins", sans-serif;
@@ -230,7 +237,8 @@
     font-weight: 400;
     font-size: 25px;
   }
-  .p-style{
+
+  .p-style {
     /* background-color: red; */
     padding-top: 2rem;
     font-size: 1.2rem;
@@ -275,24 +283,23 @@
     height: 100vh;
     gap: 12px;
   }
+
   /* .ms-style{
     padding: 51rem;
     background-color: red;
     margin: 1rem;
   } */
-
-
 }
 
 
 /* PROJECT SECTION STYLING */
-.project-container{
+.project-container {
   background-color: rgba(35, 20, 66, 0.951);
 }
+
 .project-title-wrapper {
   display: flex;
   justify-content: space-around;
-  
 }
 
 .project-nav-item-wrapper {
