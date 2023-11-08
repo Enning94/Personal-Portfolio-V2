@@ -8,79 +8,6 @@
   font-family: Poppins, sans-serif;
 }
 
-
-/*
-@media (max-width: 900px) {
-  .projects {
-    width: 100% !important;
-    padding: 0 10px !important;
-    margin: 0 !important;
-    flex-direction: column !important;
-    height: 100% !important;
-  }
-
-  .projects .vertical-text {
-    display: none;
-  }
-
-  .projects .projects-container {
-    margin: 0 !important;
-    padding: 50px 0 80px 0 !important;
-    flex-direction: column !important;
-    align-items: center !important;
-  }
-
-  .projects .projects-carousel {
-    background-color: #333;
-    flex-direction: column;
-    align-items: center;
-    width: 95% !important;
-    padding: 10px 0 !important;
-    border-radius: 10px;
-  }
-
-  .projects .projects-carousel .proj-info {
-    width: 90%;
-  }
-
-  .projects .projects-carousel .title {
-    font-size: 30px;
-    margin: 10px 0;
-  }
-
-  .projects .tools,
-  .projects .project-stacks {
-    margin-top: 10px;
-    flex-wrap: wrap;
-    flex: 1;
-    width: 100%;
-  }
-
-  .projects .tools li {
-    margin-bottom: 0;
-  }
-
-  .projects .btns {
-    margin: 0 !important;
-  }
-
-  .projects h4 {
-    display: none;
-  }
-
-  .projects .proj-date {
-    p {
-      display: none;
-    }
-
-    width: 90%;
-  }
-
-  .projects .proj-date .project-img {
-    margin: 20px 0;
-    width: 100%;
-  } */
-
 @media screen and (max-width: 768px) {
   .custom-navbar-bg {
     background-color: rgb(20, 1, 45);
@@ -184,7 +111,7 @@
   }
 
   .icon-style {
-   color: rgb(190, 48, 48);
+    color: rgb(190, 48, 48);
   }
 
   .social-media {
@@ -261,7 +188,7 @@
   }
 
   .icon-style {
-    color:rgb(190, 48, 48);
+    color: rgb(190, 48, 48);
     font-size: 1.3rem;
   }
 
@@ -319,7 +246,7 @@
     padding-top: 2.5rem;
     font-weight: bold;
     white-space: nowrap;
-    color:rgb(190, 48, 48);
+    color: rgb(190, 48, 48);
   }
 
   .headline {
@@ -357,7 +284,8 @@
 .project-nav-item {
   padding: 1rem;
 }
-/* 
+
+/*
 .skills-container {
   list-style: none;
   padding-left: 0;
@@ -479,23 +407,24 @@
 .rec-pagination {
   position: absolute;
   bottom: 60px;
+
   /* font-size: 4rem; */
 }
 
 .rec-dot {
-  background-color:  #fff !important;
+  background-color: #fff !important;
   transform: scale(1.2);
   box-shadow: 0 0 1px 1px #bc0404 !important;
 }
 
 .rec-dot:hover {
-  background-color:#000 !important;
+  background-color: #000 !important;
   box-shadow: 0 0 2px 4px #bc0404 !important;
   color: #bc0404;
 }
 
 .rec-dot_active {
-  background-color:rgb(190, 48, 48)!important;
+  background-color: rgb(190, 48, 48) !important;
   box-shadow: 0 0 2px 3px #fff !important;
   transform: scale(1.3);
 }
@@ -511,6 +440,7 @@
 
 .rec-arrow:hover {
   color: #000 !important;
+
   /* background-color: #f3ca2f !important; */
 
   /* color: #f3ca2f; */
@@ -530,7 +460,6 @@
   position: relative;
 }
 
-
 .projects .proj-img:hover {
   cursor: pointer;
 }
@@ -546,10 +475,12 @@
 }
 
 .projects .tools li {
-  background-color:  rgba(203, 13, 13, 0.273); /* Blend of rgb(46, 37, 78) */
+  background-color: rgba(203, 13, 13, 0.273); /* Blend of rgb(46, 37, 78) */
   font-size: 1rem;
   padding: 1rem;
+
   /* margin-right: 0.5rem; */
+
   /* margin-bottom: 0.5rem; */
   border-radius: 0.2rem;
   color: #fff; /* White */
@@ -558,7 +489,7 @@
 
 .project-stacks li:hover {
   transition: all 0.3s ease;
-  color:  rgba(255, 0, 0, 0.974); /* Blend of rgb(46, 37, 78) and #fff */
+  color: rgba(255, 0, 0, 0.974); /* Blend of rgb(46, 37, 78) and #fff */
   cursor: pointer;
 }
 
@@ -586,7 +517,7 @@
 }
 
 .arr-style {
-  color:rgb(190, 48, 48);
+  color: rgb(190, 48, 48);
   padding: 0.3rem;
   font-weight: 900;
 }
@@ -605,7 +536,7 @@
 
 .title:hover {
   cursor: pointer;
-  color:rgb(190, 48, 48);
+  color: rgb(190, 48, 48);
   -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
   text-decoration: none;
