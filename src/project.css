@@ -1,0 +1,62 @@
+.black-btn {
+  /* width: 160px; */
+  display: flex;
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  letter-spacing: 0.025em;
+  padding: 1em 1.2em 1em;
+  background-color: rgb(190, 48, 48);
+  gap: 10px;
+  text-decoration: none;
+  color: #fff;
+
+  /* border: 2px solid #f3c92f5b !important; */
+}
+
+.black-btn span {
+  color: rgb(20, 1, 45);
+}
+
+.card-img {
+  width: 100rem;
+}
+
+.ic {
+  font-size: 1.5rem;
+}
+
+.black-btn a:hover {
+  color: black !important;
+}
+
+.black-btn:hover {
+  background-color: rgb(20, 1, 45);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  text-decoration: none;
+}
+
+.text-padding {
+  padding-right: 5rem;
+}
+
+.black-btn:hover span {
+  color: red;
+}
+
+.tools li {
+  /* background-color: #3c3b3bba; */
+  font-size: 0.9rem;
+  padding: 0.2rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.2rem;
+}
+
+.tools li:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #f3ca2f;
+  cursor: pointer;
+}
