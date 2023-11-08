@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.css'; // eslint-disable-line import/no-extraneous-dependencies
+import { BiDownload } from 'react-icons/bi';
 
-function Navbar() {
+const Navbar = () => {
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
@@ -63,9 +64,10 @@ function Navbar() {
                 Contact
               </button>
             </li>
-            <li className="nav-item p-3 download-bg">
-              <a className="text-reset text-decoration-none" href="/your-cv-file.pdf" download>
+            <li className="nav-item download-bg">
+              <a className="black-btn" href="/your-cv-file.pdf" download>
                 Download CV
+                <span><BiDownload className="ic" /></span>
               </a>
             </li>
           </ul>
@@ -73,5 +75,5 @@ function Navbar() {
       </div>
     </nav>
   );
-}
+};
 export default Navbar;
