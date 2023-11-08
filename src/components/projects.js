@@ -1,93 +1,150 @@
-import 'bootstrap-icons/font/bootstrap-icons.css';
-import Image from './assets/images/coinHub.png';
+import React from 'react';
+import Carousel from '@itseasy21/react-elastic-carousel';
+import Project from './project';
+import project1 from './assets/images/coinHub.png';
+// import project2 from '../images/project2.png';
+// import project3 from '../images/project3.png';
+// import project4 from '../images/project4.png';
+// import project5 from '../images/project5.png';
+// import project6 from '../images/project6.png';
+// import project7 from '../images/project7.png';
+// import project8 from '../images/project8.png';
 
-function Projects() {
+const Projects = () => {
+  const projects = [
+    {
+      id: 0,
+      title: 'LMS',
+      description: 'Learning Management System(LMS) Inquiry for developing a mobile app LMS for test practice, offering personalized and adaptive learning to identify weak areas and aid users in achieving desired results efficiently. Subjects include driving, scuba diving, health, hygiene, and first aid.',
+      projImage: project1,
+      githubLink: 'https://github.com/Hombre2014/lms',
+      demoLink: 'https://lms-dashboard-weld.vercel.app/',
+      date: 'April 2023',
+      type: 'Mobile App, Dashboard',
+      techs: ['React Native', 'Nextjs', 'Redux', 'Tailwinds'],
+      stacks: ['API', 'Fullstack', 'Frontend', 'Mobile App'],
+    },
+    {
+      id: 1,
+      title: 'ICinema',
+      description: `The iCinema is a single webapp that is based on the TVmaze API. With the use 
+       the Involvement API to POST and GET the likes and comments,
+        users can comment and like a certain series.`,
+      projImage: project1,
+      githubLink: 'https://github.com/SamanAtashi/JS-Capstone-project/',
+      demoLink: 'https://samanatashi.github.io/JS-Capstone-project/dist/',
+      date: 'Jun 2021',
+      type: 'WebSite',
+      techs: ['JavaScript', 'HTML', 'CSS'],
+      stacks: ['API', 'Fullstack', 'Frontend'],
+    },
+    {
+      id: 2,
+      title: 'Awesome Books Library',
+      description: '"Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list',
+      projImage: project1,
+      githubLink: 'https://github.com/andersonlebon/Awesome-book',
+      demoLink: 'https://andersonlebon.github.io/Awesome-book/',
+      date: 'Jun 2021',
+      type: 'WebSite App',
+      techs: ['JavaScript', 'HTML', 'CSS', 'Bootstrap'],
+      stacks: ['Fullstack', 'Frontend'],
+    },
+    {
+      id: 3,
+      title: 'CAR-PARKING',
+      description: `We are already using the intelligence of the connected car with companion apps that recognize when the car
+is in a paid parking area and later auto-stops when leaving. Creating a simple customer-focused payment solution for parking.`,
+
+      projImage: project1,
+      githubLink: 'https://github.com/andersonlebon/CAR-PARKING',
+      demoLink: 'https://car-packing.netlify.app/',
+      date: 'Feb 2021',
+      type: 'WebSite App',
+      techs: ['React', 'Redux', 'JavaScript', 'HTML', 'CSS'],
+      stacks: ['Fullstack', 'Frontend', 'API'],
+    },
+    {
+      id: 4,
+      title: 'Charity in the world',
+      description: `CHARITY IN THE WORLD is a website that provides the resources and platform to empower families to 
+       funds for their adoption and engage their community with the powerful story of 
+       why they are choosing adoption. As one of the purest expressions of the love and compassion of the Gospel,
+        adoption has always provided the life-altering solution to this need.`,
+      projImage: project1,
+      githubLink: 'https://github.com/andersonlebon/CHARITY-CAPSTON-PROJECT',
+      demoLink: 'https://andersonlebon.github.io/CHARITY-CAPSTON-PROJECT/',
+      date: 'Jun 2021',
+      type: 'WebSite',
+      techs: ['JavaScript', 'HTML', 'CSS'],
+      stacks: ['Frontend'],
+    },
+    {
+      id: 5,
+      title: 'BookStore',
+      description: `This is a simple website build with 'REACT' and 'REDUX' that displays a 
+      list of books from an API and allows you to add and remove books in the API store.`,
+      projImage: project1,
+      githubLink: 'https://github.com/andersonlebon/BookStore',
+      demoLink: 'https://caleb-bookstore.herokuapp.com/books',
+      date: 'Jul 2021',
+      type: 'WebSite App',
+      techs: ['React', 'Redux', 'JavaScript', 'HTML', 'CSS', 'Bootstrap', 'Saas'],
+      stacks: ['Fullstack', 'Frontend', 'API'],
+    },
+    {
+      id: 6,
+      title: 'TODO-LIST',
+      description: `ToDo List App is a kind of app that is generally used to maintain our day-to-day tasks or list everything that we have to do,
+        We can add more tasks at any time and delete a task that is completed.`,
+      projImage: project1,
+      githubLink: 'https://github.com/andersonlebon/todo-with-react',
+      demoLink: 'https://andersonlebon.github.io/Portfolio-w2/images/icons/IconExport.svg',
+      date: 'Aug 2021',
+      type: 'WebSite App',
+      techs: ['React', 'Redux', 'JavaScript', 'HTML', 'CSS', 'Bootstrap', 'Saas'],
+      stacks: ['Fullstack', 'Frontend', 'API'],
+    },
+    {
+      id: 8,
+      title: 'Budget App',
+      description: `A mobile web application where you can manage your budget: you have a list of transactions associated with 
+      a category, so that you can see how much money you spent and on what.
+      `,
+      projImage: project1,
+      githubLink: 'ghttps://github.com/andersonlebon/Budget-appithub',
+      demoLink: 'https://github.com/andersonlebon/Budget-app',
+      date: 'Nov 2021',
+      type: 'Mobile webApp',
+      techs: ['Ruby', 'Ruby on Rails', 'JavaScript', 'HTML', 'CSS', 'Bootstrap', 'SaaS'],
+      stacks: ['Fullstack', 'Frontend', 'API', 'Backend', 'Database'],
+    },
+    {
+      id: 7,
+      title: 'House Bonking',
+      description: `I built a house booking application(with discount) where the user has the posibilities to add, reserve and
+       delete houses with added advantage to view house details.The application has 
+       authentication whereby the logged in user can only delete the houses that he/she added.`,
+      projImage: project1,
+      githubLink: 'https://github.com/andersonlebon/Final-capstone-frontend-',
+      demoLink: 'https://bookinghouse.netlify.app/',
+      date: 'Dec 2021',
+      type: 'WebSite App',
+      techs: ['React', 'Redux', 'JavaScript', 'HTML', 'CSS', 'Bootstrap', 'Saas', 'Ruby', 'Ruby on Rails'],
+      stacks: ['Fullstack', 'Frontend', 'API'],
+    },
+  ];
   return (
     <>
-      <section className="project-container">
-        <div className="project-title-wrapper">
-          <div>
-            <h2>Projects</h2>
-            <p>lorem lorem lorem lorem lorem lorem</p>
-          </div>
-          <div className="btn-hide">
-            <ul className="project-nav-item-wrapper">
-              <li><button type="button" className="project-nav-item">Recent Works</button></li>
-              <li>
-                {' '}
-                <button type="button" className="project-nav-item">Collaborative Projects</button>
-              </li>
-              <li>
-                {' '}
-                <button type="button" className="project-nav-item">Solo Projects</button>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="project-cards p-5">
-          <div className="row row-cols-1 row-cols-md-3 g-4">
-            <div className="col">
-              <div className="card h-100 ">
-                <img src={Image} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-                <button type="button" className="card-footer">
-                  <small type="button" className="text-body-secondary">Last updated 3 mins ago</small>
-                </button>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card h-100 text-bg-dark">
-                <img src={Image} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-                <button type="button" className="card-footer">
-                  <small type="button" className="text-body-secondary">Last updated 3 mins ago</small>
-                </button>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card h-100 text-bg-dark">
-                <img src={Image} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                  <div>
-                    <ul className="skills-container d-flex justify-content-between">
-                      <li>React\Redux</li>
-                      <li>CSS</li>
-                      <li>JavaScript</li>
-                      <li>Jest</li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="card-footer">
-                  <small className="text-body-secondary">Last updated 3 mins ago</small>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card h-100">
-                <img src="./assets/images/" className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                </div>
-                <div className="card-footer">
-                  <small className="text-body-secondary">Last updated 3 mins ago</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Carousel id="projects">
+        {projects.map((item) => (
+          <>
+            <Project key={item.id} project={item} />
+          </>
+        ))}
+      </Carousel>
     </>
   );
-}
+};
 
 export default Projects;
